@@ -1,0 +1,14 @@
+
+<div class="form-group box-t ">
+    <div class="row">
+        <div class="col-md-6">
+          <input #txtItem type="text" class="form-control" placeholder="Add Item">
+        </div>
+        <div class="col-md-6">  
+          <button class="btn btn-success" (click)="addItem(txtItem.value)">ADD</button>
+        </div>
+   </div>
+</div>
+<ul class="list-group">
+  <li class="list-group-item list-group-item-warning" *ngFor="let item of itens">{{item}} | <button class="btn btn-danger" (click)="deleteItem(itens.indexOf(item), item)">Excluir</button></li>
+</ul>
