@@ -10,5 +10,7 @@
    </div>
 </div>
 <ul class="list-group">
-  <li class="list-group-item list-group-item-warning" *ngFor="let item of itens">{{item}} | <button class="btn btn-danger" (click)="deleteItem(itens.indexOf(item), item)">Excluir</button></li>
+  <li class="list-group-item list-group-item-warning" *ngFor="let item of itens">{{item}} | <button class="btn btn-danger" (click)="deleteItem(itens.indexOf(item))">Excluir</button> | <button class="btn btn-warning" (click)="open(itens.indexOf(), item)">Editar</button></li>
 </ul>
+
+<!--<button class="btn btn-lg btn-outline-primary" (click)="open()">Launch demo modal</button>-->
