@@ -1,0 +1,5 @@
+.progressBar{
+    grid-template-columns: 1fr 6fr;
+    display: grid;
+    font-family: 'Courier New', Courier, monospace;
+}
